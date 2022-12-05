@@ -66,7 +66,6 @@ for($i = $instructuonStart ; $i -lt $nLines; $i++)
 {
     $line = $fileContent[$i]
 
-    #move 10 from 8 to 6
     $processedLine = $line.Replace('move ','').Replace(' from ',',').Replace(' to ',',')
     $processedLineSplit = $processedLine.Split(',')
 
